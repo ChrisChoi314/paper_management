@@ -7,7 +7,7 @@ import pandas as pd
 #file_path = "massive_papers_2025-04-04.csv" 
 #file_path = "test.csv" 
 #file_path = "small_sample.csv"
-file_path = "cleaned_bunch_of_papers.csv"
+file_path = "2025-04-23/cleaned_combined_papers.csv"
 
 # Load the CSV file into a DataFrame
 data = pd.read_csv(file_path)
@@ -66,4 +66,4 @@ data["Authors"] = authors
 data["ArXiv Link"] = data["ArXiv Link"].apply(clean_arxiv_url)
 
 # Display the updated DataFrame to the user
-data.to_csv("bunch_of_papers_2025-04-08.csv", index=False)
+data.to_csv("2025-04-23/perturbations.csv", index=False)
